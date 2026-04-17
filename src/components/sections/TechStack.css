@@ -1,0 +1,69 @@
+/* src/components/sections/TechStack.css */
+.tech-stack {
+  padding: 80px 0;
+  background: white;
+  overflow: hidden;
+}
+
+.tech-marquee {
+  overflow: hidden;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.tech-track {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  width: fit-content;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 2rem;
+  margin: 0 1rem;
+  background: #f8f9fa;
+  border-radius: 15px;
+  min-width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+}
+
+.tech-icon {
+  font-size: 3rem;
+}
+
+.tech-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+@media (max-width: 768px) {
+  .tech-stack {
+    padding: 60px 0;
+  }
+  
+  .tech-item {
+    padding: 1rem 1.5rem;
+    min-width: 100px;
+  }
+  
+  .tech-icon {
+    font-size: 2rem;
+  }
+}
