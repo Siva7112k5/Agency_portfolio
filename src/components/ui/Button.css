@@ -1,5 +1,8 @@
 /* src/components/ui/Button.css */
 .btn {
+  /* Your button styles */
+}
+.btn {
   padding: 0.875rem 2rem;
   border-radius: 50px;
   font-weight: 600;
